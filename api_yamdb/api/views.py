@@ -2,9 +2,10 @@ from django.db.models import Avg
 from django.shortcuts import get_object_or_404
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters, viewsets
-from api.serializers import CommentSerializer, ReviewSerializer
-from api.permissions import AuthorOrAdminOrReadOnly
 from reviews.models import Category, Genre, Review, Title
+
+from api.permissions import AuthorOrAdminOrReadOnly
+from api.serializers import CommentSerializer, ReviewSerializer
 
 from .firters import TitlesFilter
 from .mixins import ListCreateDestroyGenericViewSet
