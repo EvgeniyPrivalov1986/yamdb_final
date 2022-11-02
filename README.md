@@ -1,3 +1,5 @@
+![Yamdb Workflow Status](https://github.com/EvgeniyPrivalov1986/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master&event=push)
+
 # Проект api_yamdb в контейнере Docker
 
 ## Описание
