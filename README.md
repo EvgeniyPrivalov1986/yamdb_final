@@ -55,11 +55,11 @@ apt install docker.io
 curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 ```
-- Локально отредактировать файл infra/nginx.conf, обязательно в строке server_name вписать IP-адрес сервера
-- Скопировать файлы docker-compose.yml и nginx.conf из директории infra на сервер:
+- Локально отредактировать файл infra/nginx/default.conf, обязательно в строке server_name вписать IP-адрес сервера
+- Скопировать файлы docker-compose.yml и default.conf из директории infra на сервер:
 ```bash
 scp docker-compose.yml <username>@<host>:/home/<username>/docker-compose.yml
-scp nginx.conf <username>@<host>:/home/<username>/nginx.conf
+scp nginx.conf <username>@<host>:/home/<username>/nginx/default.conf
 ```
 - Создать .env файл по предлагаемому выше шаблону. Обязательно изменить значения POSTGRES_USER и POSTGRES_PASSWORD
 - Для работы с Workflow добавить в Secrets GitHub переменные окружения для работы:
@@ -112,7 +112,6 @@ docker-compose up -d --build
  - DB_HOST=db
  - DB_PORT=5432
  - SECRET_KEY=<секретный ключ проекта django>
-
 
 ## Описание проекта
 
