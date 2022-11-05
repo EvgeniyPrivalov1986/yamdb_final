@@ -1,6 +1,6 @@
 ![Yamdb Workflow Status](https://github.com/EvgeniyPrivalov1986/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master&event=push)
 
-Проект развернут по адресу: http://localhost:8000/redoc/
+Проект развернут по адресу: http://158.160.15.224/admin/
 
 # Проект api_yamdb в контейнере Docker
 
