@@ -1,6 +1,6 @@
 ![Yamdb Workflow Status](https://github.com/EvgeniyPrivalov1986/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master&event=push)
 
-Проверить доступность сервиса: http://158.160.15.224/admin/
+Проверить доступность сервиса: http://158.160.0.193/admin/
 
 # Проект api_yamdb в контейнере Docker
 
